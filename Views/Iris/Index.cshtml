@@ -1,0 +1,31 @@
+@model IEnumerable<IrisReadingApp.Models.Iris>
+
+@{
+    Layout = "_Layout";
+}
+
+<h2>Iris Data</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Sepal Length</th>
+            <th>Sepal Width</th>
+            <th>Petal Length</th>
+            <th>Petal Width</th>
+            <th>Species</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.SepalLength</td>
+            <td>@item.SepalWidth</td>
+            <td>@item.PetalLength</td>
+            <td>@item.PetalWidth</td>
+            <td>@item.Species</td>
+        </tr>
+    }
+    </tbody>
+</table>
