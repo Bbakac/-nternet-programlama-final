@@ -1,4 +1,7 @@
-macOS için:
+IrisReadingApp adında dosya oluşturun daha sonra projeyi du dosya içinde kurun veya bütün dosyalar buradan alınarak proje oluşturulabilir.
+
+
+macOS için projeyi oluşturma:
 Aşağıdaki komutu kullanarak yeni bir ASP.NET Core MVC projesi oluşturun: dotnet new mvc -n IrisReadingApp 
 cd IrisReadingApp 
 code .
@@ -16,3 +19,12 @@ dotnet run
 
 aşağıdaki local host gibi, çıktı da yer alan adrese kendi bilgisayarınızda gidin.
 http://localhost:5011/Iris
+
+
+
+projeye dair:
+vscode için:
+Yeni bir MVC Ef core 6.0 projesi oluşturun. aşağıdakileri yapın:
+1.Eklentideki json dosyasını bir action metodu aracılığıyla okutarak içeriğini view'a gönderin.
+2.iris.json dosyasının içeriğini görüntülediğiniz View ı kendiniz belirleyeceğiniz bir layout ile oluşturun(tasarım serbest. Örneğin sadece renk kullanabilirsiniz)
+iris.json
