@@ -3,7 +3,8 @@ Aşağıdaki komutu kullanarak yeni bir ASP.NET Core MVC projesi oluşturun: d
 cd IrisReadingApp 
 code .
 
-Gerekli Paketleri Yükleme: IrisReadingApp projesinde JSON dosyalarını okuyup işleyebilmek için Microsoft.AspNetCore.Mvc.NewtonsoftJson paketini yükleyin:
+Gerekli Paketleri Yükleme:
+IrisReadingApp projesinde JSON dosyalarını okuyup işleyebilmek için Microsoft.AspNetCore.Mvc.NewtonsoftJson paketini yükleyin:
 dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson --version 6.0.0
 
 dotnet restore
