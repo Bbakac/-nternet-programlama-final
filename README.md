@@ -1,30 +1,86 @@
-IrisReadingApp adında dosya oluşturun daha sonra projeyi du dosya içinde kurun veya bütün dosyalar buradan alınarak proje oluşturulabilir.
+# IrisReadingApp
 
+IrisReadingApp is a web application built using ASP.NET Core MVC. This application reads the Iris flower dataset (iris.json) and presents it to the user. The project is developed using EF Core 6.0 and ASP.NET Core MVC 6.0.
 
-macOS için projeyi oluşturma:
-Aşağıdaki komutu kullanarak yeni bir ASP.NET Core MVC projesi oluşturun: dotnet new mvc -n IrisReadingApp 
-cd IrisReadingApp 
-code .
+## Installation Instructions
 
-Gerekli Paketleri Yükleme:
-IrisReadingApp projesinde JSON dosyalarını okuyup işleyebilmek için Microsoft.AspNetCore.Mvc.NewtonsoftJson paketini yükleyin:
-dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson --version 6.0.0
+### Creating the Project
 
-dotnet restore
-Bu komut, proje dosyalarınızdaki csproj dosyasına dayanarak tüm bağımlılıkları ve paketleri yükler. Genellikle yeni bir proje oluşturduğunuzda bu komut otomatik olarak çalıştırılmaz, bu yüzden elle çalıştırmanız gerekebilir.
+1. Create a new ASP.NET Core MVC project using the following command:
+    ```sh
+    dotnet new mvc -n IrisReadingApp
+    cd IrisReadingApp
+    code .
+    ```
 
-çalıştırmak için:
-dotnet build
-dotnet run
+### Installing Required Packages
 
-aşağıdaki local host gibi, çıktı da yer alan adrese kendi bilgisayarınızda gidin.
-http://localhost:5011/Iris
+2. Install the `Microsoft.AspNetCore.Mvc.NewtonsoftJson` package to read and process JSON files:
+    ```sh
+    dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson --version 6.0.0
+    ```
 
+### Building and Running the Project
 
+3. Restore the project dependencies by running:
+    ```sh
+    dotnet restore
+    ```
 
-projeye dair:
-vscode için:
-Yeni bir MVC Ef core 6.0 projesi oluşturun. aşağıdakileri yapın:
-1.Eklentideki json dosyasını bir action metodu aracılığıyla okutarak içeriğini view'a gönderin.
-2.iris.json dosyasının içeriğini görüntülediğiniz View ı kendiniz belirleyeceğiniz bir layout ile oluşturun(tasarım serbest. Örneğin sadece renk kullanabilirsiniz)
-iris.json
+4. Build and run the project:
+    ```sh
+    dotnet build
+    dotnet run
+    ```
+
+5. Once the application is running, navigate to [http://localhost:5011/Iris](http://localhost:5011/Iris) in your browser.
+
+## Project Structure
+
+- **Controllers**
+    - `HomeController.cs`
+    - `IrisController.cs`
+    - `OgrencilerController.cs`
+
+- **Views**
+    - `Yeni.cshtml`
+    - `Detay.cshtml`
+    - `Privacy.cshtml`
+    - `Index.cshtml`
+    - `Sil.cshtml`
+    - `Guncelle.cshtml`
+
+- **Models**
+    - `Iris.cs`
+
+- **Configurations**
+    - `Program.cs`
+    - `IrisReadingApp.csproj`
+    - `IrisReadingApp.sln`
+
+- **Static Assets**
+    - `_Layout.cshtml`
+    - `_Layout.cshtml.css`
+
+### Details
+
+- **iris.json**: Contains the Iris flower dataset. This dataset is read in JSON format and presented to users within the project.
+- **Controllers**: The MVC controllers manage the application's logic and user interactions.
+- **Views**: These are the pages and interfaces presented to the user.
+- **Models**: Contain the data models.
+- **Configurations**: Configuration files for the project.
+
+## Project Requirements
+
+- .NET 6.0 SDK
+- Visual Studio Code (or any other IDE)
+
+## How to Contribute
+
+Follow these steps to contribute to the project:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Create a Pull Request.
